@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  background-color: #fafafa;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 31, 39, 0.7);
+  display: none;
+}
+
+.overlay--visible {
+  display: block;
+}
+
+.header {
+  padding: 6.15% 4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-button {
+  background-image: url(./images/icon-menu.svg);
+  width: 3.2rem;
+  height: 2rem;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+}
+
+/* dropdown menu */
+.dropdown-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  background-color: #fafafa;
+  padding: 5.4%;
+  display: none;
+}
+
+.dropdown-menu--open {
+  display: block;
+}
+
+.dropdown__close-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 4%;
+}
+
+.li {
+  list-style-type: none;
+}
+
+.menu-dropdown__li {
+  padding-top: 12.8%;
+}
+
+.company__li {
+  padding-top: 17.6%;
+}
+
+.company__li--first {
+  padding-top: 11%;
+}
+
+.submenu__dropdown {
+  padding-top: 6.5%;
+  padding-left: 24.6%;
+}
+
+.submenu__dropdown-arrow:after {
+  content: url(./images/icon-arrow-down.svg);
+  display: inline-block;
+  padding: 0 7.4%;
+}
+
+.submenu__dropdown-arrow:active::after {
+  filter: brightness(0%);
+}
+
+.submenu__dropdown-arrow--up:after {
+  transform: rotate(180deg);
+}
+
+.features__dropdown {
+  display: none;
+}
+
+.features__dropdown--open {
+  display: block;
+}
+
+.company__dropdown {
+  display: none;
+}
+
+.company__dropdown--open {
+  display: block;
+}
+
+.features__li {
+  display: flex;
+  padding-top: 22px;
+}
+
+.link {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  font-size: 1.5rem;
+}
+
+.link:hover,
+.login-button:hover,
+.register-button:hover {
+  color: hsla(0, 0%, 8%, 0.7);
+}
+
+.link:active,
+.login-button:active,
+.register-button:active {
+  color: hsl(0, 0%, 8%);
+}
+
+.register-button:active {
+  border-color: hsl(0, 0%, 8%);
+}
+
+.features__link {
+  padding-left: 15px;
+}
+
+.login-button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  background-color: #fafafa;
+  color: hsl(0, 0%, 41%);
+  padding: 20% 0 8.4%;
+}
+
+.register-button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 15px;
+  background-color: #fafafa;
+  color: hsl(0, 0%, 41%);
+  padding: 7% 32.5%;
+}
+
+/* hero section */
+.hero-section {
+  display: grid;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__details {
+  padding: 13.4% 5.35% 12%;
+}
+
+.hero__header {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.hero__text {
+  padding: 9% 0;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: hsl(0, 0%, 41%);
+  text-align: center;
+}
+
+.hero__button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 1px solid #fafafa;
+  padding: 5.4% 7.5%;
+  border-radius: 1.5rem;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 13.5%;
+  transition: all 0.3s ease-out;
+}
+
+.hero__button:hover {
+  background-color: #fafafa;
+  color: hsla(0, 0%, 8%, 0.8);
+  border-color: hsla(0, 0%, 8%, 0.8);
+  font-size: 1.8rem;
+}
+
+.hero__button:active {
+  color: hsl(0, 0%, 8%);
+  border-color: hsl(0, 0%, 8%);
+}
+
+/* clients section */
+.hero__clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
+
+.client__card {
+  flex: 1;
+}
+
+.client__logo {
+  width: 100%;
+}
+
+/* footer */
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  padding-bottom: 12%;
+}
+
+.attribution__link {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsiveness */
+@media (min-width: 500px) {
+  .header {
+    padding: 4%;
+  }
+
+  .dropdown-menu {
+    width: 40%;
+    padding: 4%;
+  }
+
+  .hero__picture {
+    padding: 0 15%;
+  }
+
+  .hero__details {
+    padding: 5%;
+  }
+
+  .hero__text {
+    padding: 4%;
+  }
+
+  .hero__button {
+    padding: 2% 5%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    padding: 1.4% 2.8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    position: static;
+    padding: 0;
+  }
+
+  .dropdown__close-button-container {
+    display: none;
+  }
+
+  .header__logo-container {
+    flex: 0.5;
+  }
+
+  .header__nav {
+    flex: 4;
+    display: flex;
+  }
+
+  .header__nav--main {
+    display: flex;
+    column-gap: 3rem;
+    align-items: center;
+  }
+
+  .menu-dropdown__li {
+    padding-top: 0;
+  }
+
+  .menu-dropdown__li--features,
+  .menu-dropdown__li--company {
+    width: 9.6rem;
+  }
+
+  .register-button {
+    padding: 15px 25px;
+    font-size: 1.5rem;
+  }
+
+  .logo-img {
+    width: 8.5rem;
+    height: 3rem;
+  }
+
+  .login-register__buttons {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .login-button {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+
+  .features__submenu {
+    position: relative;
+  }
+
+  .company__submenu {
+    position: relative;
+  }
+
+  .submenu__dropdown {
+    padding: 0.65% 1.7% 1.7%;
+    position: absolute;
+    margin-top: 1.45%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 40px rgb(206, 206, 206);
+  }
+
+  .features__dropdown {
+    margin-left: -4%;
+  }
+
+  .features__li {
+    padding-top: 15px;
+  }
+
+  .features__link {
+    text-wrap: nowrap;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr 1fr;
+    padding: 3.15% 9%;
+  }
+
+  .hero__details {
+    padding: 17.8% 7.4% 0 7.4%;
+  }
+
+  .hero__picture {
+    order: 2;
+    padding: 0;
+  }
+
+  .hero__image {
+    width: 100%;
+    padding-left: 18.2%;
+  }
+
+  .hero__header {
+    text-align: left;
+    font-size: 7rem;
+    line-height: 7.5rem;
+  }
+
+  .hero__title--word {
+    display: block;
+  }
+
+  .hero__text {
+    width: 90%;
+    padding: 12% 0;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-align: left;
+  }
+
+  .hero__button {
+    margin: 0 0 10.5% 0;
+    padding: 4% 8.5%;
+    border-radius: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .hero__clients {
+    padding: 10.5% 0 0 0;
+    width: 90%;
+    gap: 9%;
+  }
+
+  .attribution {
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+  }
+}

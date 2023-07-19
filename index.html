@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header class="header">
+      <div class="header__logo-container">
+        <img class="logo" src="./images/logo.svg" alt="logo image" />
+      </div>
+
+      <nav class="header__nav">
+        <button class="menu-button"></button>
+
+        <div class="dropdown-menu">
+          <div class="dropdown__close-button-container">
+            <img
+              class="dropdown__close-button"
+              src="./images/icon-close-menu.svg"
+              alt="close menu icon"
+            />
+          </div>
+          <ul class="header__nav--main">
+            <li class="li menu-dropdown__li menu-dropdown__li--features">
+              <a class="link features__submenu submenu__dropdown-arrow" href="#"
+                >Features</a
+              >
+
+              <ul class="submenu__dropdown features__dropdown">
+                <li class="li features__li">
+                  <img src="./images/icon-todo.svg" alt="todo list icon" />
+                  <a class="link features__link" href="#">Todo List</a>
+                </li>
+                <li class="li features__li">
+                  <img src="./images/icon-calendar.svg" alt="calendar icon" />
+                  <a class="link features__link" href="#">Calendar</a>
+                </li>
+                <li class="li features__li">
+                  <img src="./images/icon-reminders.svg" alt="reminders icon" />
+                  <a class="link features__link" href="#">Reminders</a>
+                </li>
+                <li class="li features__li">
+                  <img src="./images/icon-planning.svg" alt="planning icon" />
+                  <a class="link features__link" href="#">Planning</a>
+                </li>
+              </ul>
+            </li>
+            <li class="li menu-dropdown__li menu-dropdown__li--company">
+              <a class="link company__submenu submenu__dropdown-arrow" href="#"
+                >Company</a
+              >
+
+              <ul class="submenu__dropdown company__dropdown">
+                <li class="li company__li--first">
+                  <a class="link company__link" href="#">Planning</a>
+                </li>
+                <li class="li company__li">
+                  <a class="link company__link" href="#">Our Team</a>
+                </li>
+                <li class="li company__li">
+                  <a class="link company__link" href="#">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li class="li menu-dropdown__li">
+              <a class="link" href="#">Careers</a>
+            </li>
+            <li class="li menu-dropdown__li">
+              <a class="link" href="#">About</a>
+            </li>
+          </ul>
+
+          <div class="login-register__buttons">
+            <button class="login-button">Login</button>
+            <button class="register-button">Register</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="hero-section">
+        <picture class="hero__picture">
+          <source
+            srcset="./images/image-hero-desktop.png"
+            media="(min-width: 1000px)"
+          />
+          <img
+            class="hero__image"
+            src="./images/image-hero-mobile.png"
+            alt="remote worker image"
+          />
+        </picture>
+
+        <div class="hero__details">
+          <h1 class="hero__header">
+            <span class="hero__title--word">Make</span> remote work
+          </h1>
+          <p class="hero__text">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="hero__button">Learn more</button>
+          <div class="hero__clients">
+            <div class="client__card">
+              <a href="#">
+                <img
+                  class="client__logo"
+                  src="./images/client-databiz.svg"
+                  alt="databiz client"
+                />
+              </a>
+            </div>
+            <div class="client__card">
+              <a href="#"
+                ><img
+                  class="client__logo"
+                  src="./images/client-audiophile.svg"
+                  alt="audiophile client"
+              /></a>
+            </div>
+            <div class="client__card">
+              <a href="#">
+                <img
+                  class="client__logo"
+                  src="./images/client-meet.svg"
+                  alt="meet client"
+                />
+              </a>
+            </div>
+            <div class="client__card">
+              <a href="#">
+                <img
+                  class="client__logo"
+                  src="./images/client-maker.svg"
+                  alt="maker client"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="attribution__link"
+        >Frontend Mentor</a
+      >. Coded by <a href="#" class="attribution__link">Roksolana Veres</a>.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
