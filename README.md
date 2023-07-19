@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshots
 
-![](./screenshots/1.png)
-![](./screenshots/3.png)
-![](./screenshots/2.png)
-![](./screenshots/4.png)
-![](./screenshots/5.png)
-![](./screenshots/6.png)
+![](./screenshots/pc_1.png)
+![](./screenshots/pc_2_active-state.png)
+![](./screenshots/pc_3.png)
+![](./screenshots/mobile_1.png)
+![](./screenshots/mobile_2.png)
+![](./screenshots/mobile_menu.png)
 
 ### Links
 
