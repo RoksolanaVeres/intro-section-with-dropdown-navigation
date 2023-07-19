@@ -33,9 +33,9 @@ Users should be able to:
 
 ### Links
 
-[Frontend Mentor solution]()
-[GitHub repo](https://github.com/RoksolanaVeres/intro-section-with-dropdown-navigation)
-[Live Site](https://roksolanaveres.github.io/intro-section-with-dropdown-navigation/#)
+- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/responsive-intro-section-with-mobilefirst-approach-oEYud8fG_K)
+- [GitHub repo](https://github.com/RoksolanaVeres/intro-section-with-dropdown-navigation)
+- [Live Site](https://roksolanaveres.github.io/intro-section-with-dropdown-navigation/#)
 
 ## My process
 
